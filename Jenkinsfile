@@ -22,4 +22,18 @@ pipeline {
 			}
 		}
 	}
+
+	post {
+		always {
+			echo 'Procesing end with ...'
+		}
+
+		success {
+			echo ' >>> success'
+		}
+
+		failure {
+			echo ' >>> fail'
+		}
+	}
 }
